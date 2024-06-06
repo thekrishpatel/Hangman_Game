@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman Game | Krish patel</title>
+    <link rel="icon" href="/images/img1.png" type="image/x-icon" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+  </head>
+  <body style="background-color: #5e63ba">
+    <div class="container mx-auto py-auto" style="width: 900px">
+      <div
+        class="bg-white shadow-lg rounded-lg px-8 py-10 md:max-w-3xl mx-auto"
+      >
+        <h1 class="text-3xl font-semibold text-center mb-2">Hangman Game</h1>
+        <h3 class="text-center text-gray-600 mb-4">Made by Krish Patel</h3>
+        <hr />
+        <p class="mb-12"></p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="hangman-box">
+            <img
+              src="#"
+              draggable="false"
+              alt="hangman-img"
+              class="mx-auto max-w-md"
+            />
+          </div>
+          <div class="game-box">
+            <ul class="word-display flex flex-wrap justify-center"></ul>
+            <h4 class="hint-text text-center mt-4">Hint: <b></b></h4>
+            <h4 class="guesses-text text-center">Incorrect guesses: <b></b></h4>
+            <div class="keyboard flex flex-wrap justify-center mt-8"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game-modal">
+      <div class="content">
+        <img src="#" alt="gif" />
+        <h4>Game Over!</h4>
+        <p>The correct word was: <b>rainbow</b></p>
+        <button class="play-again">Play Again</button>
+      </div>
+    </div>
+  </body>
+</html>
